@@ -2,6 +2,7 @@ import React from 'react'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import CreatePost from "./pages/CreatePost"
 import Feed from './pages/Feed';
+import Home from './pages/Home';
 
 const App = () => {
   return (
@@ -9,7 +10,7 @@ const App = () => {
       <Routes>
         <Route path='/create-post' element={<CreatePost/>}></Route>
         <Route path='/feed' element={<Feed />}></Route>
-        <Route path='/about' element={<h1>hello this is about page</h1>}></Route>
+        <Route path='/' element={<Home/>}></Route>
       </Routes>
     </Router>
   )
