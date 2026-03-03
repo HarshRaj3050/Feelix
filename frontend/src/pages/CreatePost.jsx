@@ -21,7 +21,7 @@ const CreatePost = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:3000/create-post",
+        "https://feelix-jk9h.onrender.com/create-post",
         formData,
       );
       console.log(res);
